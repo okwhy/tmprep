@@ -27,6 +27,9 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Linterfy files
+      run: npx eslint *
+
     - name: Build
       run: npm run build
 
